@@ -21,7 +21,8 @@ npm install
 ### Start project
 
 ```
-1. npm run start 2. npm run server
+npm run start
+npm run server
 
 OR
 
