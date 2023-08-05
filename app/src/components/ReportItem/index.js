@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './styles.scss'
 
 const ReportItem = ({ data, header }) => {
@@ -49,6 +50,33 @@ const ReportItem = ({ data, header }) => {
       </tbody>
     </table>
   )
+}
+
+ReportItem.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.arrayOf(
+      PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.string,
+        PropTypes.bool,
+        PropTypes.shape({
+          d: PropTypes.oneOfType([
+            PropTypes.number,
+            PropTypes.string,
+            PropTypes.bool
+          ])
+        })
+      ])
+    )
+  ).isRequired,
+  header: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      caption: PropTypes.string.isRequired,
+      align: PropTypes.oneOf(['left', 'center', 'right']),
+      type: PropTypes.oneOf(['float', 'integer', 'boolean', 'string'])
+    })
+  ).isRequired
 }
 
 export default ReportItem

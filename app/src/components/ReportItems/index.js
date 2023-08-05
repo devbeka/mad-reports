@@ -16,7 +16,7 @@ const ReportItems = () => {
   const [tableHeader, setTableHeader] = useState([])
   const [tableData, setTableData] = useState([])
   const [isLoading, setIsLoading] = useState(false)
-  const [selectedItem, setSelectedItem] = useState(0)
+  const [selectedItem, setSelectedItem] = useState('0')
 
   const handleDataChange = (e) => {
     const index = e.target.value
