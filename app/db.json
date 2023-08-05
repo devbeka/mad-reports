@@ -1,0 +1,116 @@
+{
+  "projectProfit": {
+    "header": [
+      { "id": "project_name", "type": "string", "caption": "Project name" },
+      {
+        "id": "total_by_project",
+        "type": "float",
+        "caption": "Total by project"
+      },
+      {
+        "id": "project_type",
+        "type": "string",
+        "caption": "Project type",
+        "align": "center"
+      },
+      { "id": "jan", "type": "float", "caption": "Jan" },
+      { "id": "feb", "type": "float", "caption": "Feb" },
+      { "id": "mar", "type": "float", "caption": "Mar" }
+    ],
+    "data": [
+      ["Mimesis", 1024.3, "commercial", 2048.2, 4096.0, 7300.2],
+      [
+        "Mako",
+        2345.1,
+        "internal",
+        3465.3,
+        15.3,
+        { "d": 12.5, "color": "selected" }
+      ],
+      ["Edelweiss", 54.4, "commercial", 564.8, 4652.3, -738.3],
+      [
+        "Forget me not",
+        930.4,
+        "commercial",
+        234,
+        742.3,
+        { "d": 1244.45, "color": "red" }
+      ],
+      ["JD Store", 930.4, "commercial", 12000, 3421.5, 9323],
+      ["tTech", 936, "internal", 35, 156, 654]
+    ]
+  },
+  "donation": {
+    "header": [
+      { "id": "company_name", "type": "string", "caption": "Company name" },
+      {
+        "id": "total_by_donation",
+        "type": "float",
+        "caption": "Total by donation"
+      },
+      {
+        "id": "donation_type",
+        "type": "string",
+        "caption": "Donation type",
+        "align": "center"
+      },
+      { "id": "2021", "type": "float", "caption": "2021" },
+      { "id": "2022", "type": "float", "caption": "2022" },
+      { "id": "2023", "type": "float", "caption": "2023" }
+    ],
+    "data": [
+      ["google", 150000, "gratuitois", 50000, 30000, 70000],
+      [
+        "yandex",
+        55000,
+        "gratuitois",
+        3400,
+        5500,
+        { "d": 12344, "color": "selected" }
+      ],
+      ["ozon", 20000, "return", 50000, 10000, 10000],
+      [
+        "amazon",
+        9900000,
+        "gratuitois",
+        54643,
+        787343,
+        { "d": 5352, "color": "red" }
+      ],
+      ["apple", 79000, "gratuitois", 12000, 4453, 56043]
+    ]
+  },
+  "devs": {
+    "header": [
+      { "id": "name", "type": "string", "caption": "Name" },
+      { "id": "age", "type": "float", "caption": "Age" },
+      {
+        "id": "programming_language",
+        "type": "string",
+        "caption": "Programming language",
+        "align": "center"
+      },
+      { "id": "country", "type": "string", "caption": "Country" },
+      { "id": "level", "type": "string", "caption": "Level" },
+      { "id": "salary", "type": "float", "caption": "Salary" }
+    ],
+    "data": [
+      ["Sasha", 19, "JavaScript", "France", "senior", 7300],
+      ["Oleg", 43, "C++", "Russia", "middle", 3000],
+      [
+        "Beknazar",
+        20,
+        "JavaScript",
+        "Kyrgyzstan",
+        "senior",
+        { "d": 9600, "id": 12 }
+      ],
+      ["Islam", 20, "Java", "Kyrgyzstan", "senior", { "d": 9600 }],
+      ["Altynai", 29, "Python", "Kyrgyzstan", "junior", 900],
+      ["Alex", 32, "Ryby", "UK", "senior", { "d": 6700, "city": "London" }],
+      ["Anna", 24, "C#", "Italy", "middle", { "d": 4700, "city": "Rome" }],
+      ["Marco", 53, "Java", "Spain", "senior", 5500],
+      ["Ivan", 26, "PHP", "Ukraine", "senior", { "d": 5700, "color": "yellow" }]
+    ]
+  }
+}

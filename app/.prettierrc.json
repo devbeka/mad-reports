@@ -1,0 +1,10 @@
+{
+  "trailingComma": "none",
+  "indent_style": "space",
+  "indent_size": 2,
+  "semi": false,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "printWidth": 80,
+  "arrowParents": "avoid"
+}

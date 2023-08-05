@@ -1,0 +1,43 @@
+.table {
+  width: 1200px;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #409137;
+  border-style: solid;
+  color: #000000;
+
+  &__header {
+    background-color: #a7c942;
+    color: #ffff;
+    th {
+      border-width: 1px;
+      border-color: #9cc12a;
+      border-style: solid;
+      padding: 10px 5px;
+    }
+  }
+  &__body {
+    td {
+      border-width: 1px;
+      border-color: #9cc12a;
+      border-style: solid;
+      padding: 10px 5px;
+    }
+  }
+  &__line {
+    background-color: #ffffff;
+    &:nth-child(even) {
+      background-color: #eaf2d3;
+    }
+  }
+  &__item {
+    text-align: left;
+    &_right {
+      text-align: right;
+    }
+    &_center {
+      text-align: center;
+    }
+  }
+}

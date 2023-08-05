@@ -1,0 +1,11 @@
+.main-block {
+  padding: 48px 0;
+  &__loading {
+    height: 288px;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}

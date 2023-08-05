@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  api-json:
+    image: clue/json-server
+    restart: always
+    volumes:
+      - ./datas/:/data/
+    ports:
+      - 8080:80
+  app:
+    build: ./app
+    container_name: client_app
+    ports:
+      - '3000:3000'
+    stdin_open: true
