@@ -92,25 +92,25 @@
       },
       { "id": "country", "type": "string", "caption": "Country" },
       { "id": "level", "type": "string", "caption": "Level" },
-      { "id": "salary", "type": "float", "caption": "Salary" }
+      { "id": "remote", "type": "boolean", "caption": "Remote work" }
     ],
     "data": [
-      ["Sasha", 19, "JavaScript", "France", "senior", 7300],
-      ["Oleg", 43, "C++", "Russia", "middle", 3000],
+      ["Sasha", 19, "JavaScript", "France", "senior", true],
+      ["Oleg", 43, "C++", "Russia", "middle", true],
       [
         "Beknazar",
         20,
         "JavaScript",
         "Kyrgyzstan",
         "senior",
-        { "d": 9600, "id": 12 }
+        { "d": false, "id": 12 }
       ],
-      ["Islam", 20, "Java", "Kyrgyzstan", "senior", { "d": 9600 }],
-      ["Altynai", 29, "Python", "Kyrgyzstan", "junior", 900],
-      ["Alex", 32, "Ryby", "UK", "senior", { "d": 6700, "city": "London" }],
-      ["Anna", 24, "C#", "Italy", "middle", { "d": 4700, "city": "Rome" }],
-      ["Marco", 53, "Java", "Spain", "senior", 5500],
-      ["Ivan", 26, "PHP", "Ukraine", "senior", { "d": 5700, "color": "yellow" }]
+      ["Islam", 20, "Java", "Kyrgyzstan", "senior", { "d": true }],
+      ["Altynai", 29, "Python", "Kyrgyzstan", "junior", false],
+      ["Alex", 32, "Ryby", "UK", "senior", { "d": false, "city": "London" }],
+      ["Anna", 24, "C#", "Italy", "middle", { "d": false, "city": "Rome" }],
+      ["Marco", 53, "Java", "Spain", "senior", true],
+      ["Ivan", 26, "PHP", "Ukraine", "senior", { "d": true, "color": "yellow" }]
     ]
   }
 }

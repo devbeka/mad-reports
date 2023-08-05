@@ -8,8 +8,8 @@ import './styles.scss'
 
 const dataOptions = [
   { id: 0, label: 'Project profit', requestName: 'projectProfit' },
-  { id: 1, label: 'Developers', requestName: 'donation' },
-  { id: 2, label: 'Donations', requestName: 'devs' }
+  { id: 1, label: 'Developers', requestName: 'devs' },
+  { id: 2, label: 'Donations', requestName: 'donation' }
 ]
 
 const ReportItems = () => {

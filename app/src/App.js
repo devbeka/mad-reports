@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ReportItems from './components/ReportItems'
 import './styles/index.scss'
 

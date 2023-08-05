@@ -3,22 +3,25 @@ import './styles.scss'
 
 const ReportItem = ({ data, header }) => {
   const formatCell = (value, column) => {
+    const { align, type } = column
     let textPosition = ''
 
-    if (column.align) {
-      textPosition = `table__item_${column.align}`
+    if (align) {
+      textPosition = `table__item_${align}`
     } else {
-      switch (column.type) {
+      switch (type) {
         case 'float':
         case 'integer':
           textPosition = 'table__item_right'
           break
         case 'boolean':
           textPosition = 'table__item_center'
+          return (<div className={`table__item ${textPosition}`}>{String(value)}</div>)
+        default:
+          textPosition = 'table__item_left'
           break
       }
     }
-
     return <div className={`table__item ${textPosition}`}>{value}</div>
   }
 
